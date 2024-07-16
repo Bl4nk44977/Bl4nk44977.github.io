@@ -1,0 +1,123 @@
+.plansza {
+    width: 320px;
+    height: 470px;
+    background: url('Sprites/Forest.png') no-repeat;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+}
+
+.drwal {
+    width: 140px;
+    height: 132px;
+    background: url('Sprites/Player1.png') no-repeat;
+    position: absolute;
+    bottom: 80px;
+    transition: left 0.1s;
+    z-index: 1;
+}
+
+.drwal--lewa {
+    left: 8px;
+}
+
+.drwal--prawa {
+    transform: scaleX(-1);
+    left: 166px;
+}
+
+.drwal--ciecie {
+    background-image: url('Sprites/Player2.png');
+}
+
+.drwal--smierc {
+    background-image: url('Sprites/Tombstone.png');
+}
+
+.drzewo {
+    position: absolute;
+    width: 97px;
+    bottom: 129px;
+    left: 108px;
+}
+
+.pien {
+    width: 97px;
+    height: 69px;
+    background: url('Sprites/Log1.png') no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.pien::after {
+    content: '';
+    display: none;
+    width: 97px;
+    height: 69px;
+    position: absolute;
+    background: url('Sprites/Branch.png') no-repeat;
+    background-size: contain;
+}
+
+.pien--lewy::after {
+    display: block;
+    left: -100%;
+}
+
+.pien--prawy::after {
+    display: block;
+    right: -100%;
+    transform: scaleX(-1);
+}
+
+.punkty {
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 2px black;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.btn-start {
+    width: 80px;
+    height: 80px;
+    background: url('Sprites/PlayButton.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-20%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.czas {
+    width: 216px;
+    height: 68px;
+    background: url('Sprites/TimeBarBackground.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.czas-pasek {
+    width: 186px;
+    height: 34px;
+    background: url('Sprites/TimeBar.png') no-repeat;
+    position: relative;
+    top: 11px;
+    left: 15px;
+    transition: width 0.2s linear;
+}
+
+.ukryty {
+    display: none;
+}
