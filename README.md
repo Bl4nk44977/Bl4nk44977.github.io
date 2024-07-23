@@ -1,1 +1,1 @@
-# My website with Timberman, using only js to make him work.
+# My website with Timberman, using mostly js to make him work.
